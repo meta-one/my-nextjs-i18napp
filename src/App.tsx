@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Confetti from 'react-confetti'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -8,6 +9,12 @@ function App() {
 
   return (
     <>
+      <Confetti
+        width={window.innerWidth}
+        height={window.innerHeight}
+        recycle={true}
+        numberOfPieces={200}
+      />
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
